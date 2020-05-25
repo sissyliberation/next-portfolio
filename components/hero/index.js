@@ -1,6 +1,6 @@
 import styles from './hero.module.scss'
 
-export default function Hero() {
+export default function Portfolio() {
   const hero = {
     title: 'im nova skye',
     text: [
