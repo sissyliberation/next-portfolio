@@ -1,9 +1,5 @@
 import styles from './hero.module.scss'
 
-
-
-console.log(styles);
-
 export default function Hero() {
   const hero = {
     title: 'im nova skye',
