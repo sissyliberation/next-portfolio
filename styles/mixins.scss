@@ -1,5 +1,35 @@
 @import 'variables';
 
+@mixin spaceless {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin container {
-    padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: $space;
+  padding-right: $space;
+
+  @include screen-md {
+    padding-left: $space-lg;
+    padding-right: $space-lg;
+  }
+
+  @include screen-lg {
+    padding-left: $space-xxl;
+    padding-right: $space-xxl;
+  }
+}
+
+@mixin screen-md {
+  @media (min-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: $screen-lg) {
+    @content;
+  }
 }
