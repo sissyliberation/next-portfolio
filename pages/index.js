@@ -6,6 +6,8 @@ import Hero from '../components/hero'
 import PageHead from '../components/pageHead'
 
 export default function Index({ allPosts }) {
+
+
   const heroPost = allPosts[0]
 
   return (

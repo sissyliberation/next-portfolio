@@ -23,7 +23,9 @@
 }
 
 .title {
+  @include transition(color, opacity);
   font-size: 4rem;
+  opacity: 1;
 
   @include screen-md {
     font-size: 6rem;
@@ -35,8 +37,10 @@
 }
 
 .text {
+  @include transition(color, opacity);
   font-size: 2rem;
   margin-top: $space-md;
+  opacity: 1;
 
   @include screen-md {
     margin-top: 0;
@@ -74,4 +78,12 @@
 
 .pronouns {
   color: $c-main;
+}
+
+.scrolled {
+  .title,
+  .text {
+    opacity: .25;
+    color: $c-main;
+  }
 }

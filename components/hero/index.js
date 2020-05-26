@@ -1,6 +1,20 @@
+import React, { useState, useEffect } from 'react'
 import styles from './hero.module.scss'
 
-export default function Portfolio() {
+export default function Portfolio(props) {
+  const [heroClass, setClass] = useState(styles.hero);
+
+  const handleScroll = () => {
+    let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+
+    setClass(scrollTop ? `${styles.hero} ${styles.scrolled}` : styles.hero);
+  }
+  
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
   const hero = {
     title: 'im nova skye',
     text: [
@@ -11,7 +25,7 @@ export default function Portfolio() {
   };
 
   return (
-    <section className={styles.hero}>
+    <section className={heroClass}>
       <div className={styles.container}>
         <h1 className={styles.title}>{hero.title}</h1>
         <div className={`${styles.text} ${styles.text1}`} dangerouslySetInnerHTML={{

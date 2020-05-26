@@ -33,3 +33,9 @@
     @content;
   }
 }
+
+@mixin transition($transition-property...) {
+  transition-timing-function: $global-transition-timing-function;
+    transition-duration: $global-transition-duration;
+    transition-property: $transition-property;
+}
