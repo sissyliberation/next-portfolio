@@ -1,0 +1,67 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.item {
+  position: relative;
+
+  &:nth-child(even) {
+    margin-top: 3rem;
+    margin-left: -4rem;
+
+    .title {
+      top: 56%;
+    }
+  }
+
+  &:nth-child(odd):not(:first-child) {
+    margin-top: -3rem;
+  }
+
+  &:nth-child(3n) {
+    margin-left: 3.5rem;
+
+    .title {
+      right: auto;
+      left: 4rem;
+    }
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    .title {
+      opacity: 1;
+    }
+
+    .image {
+      filter: grayscale(.8);
+      opacity: .25;
+    }
+  }
+}
+
+.title {
+  @include transition(opacity);
+  position: absolute;
+  top: 20%;
+  right: $space;
+  color: $c-main;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 40%;
+  opacity: .3;
+}
+
+.link {
+  display: block;
+}
+
+.image {
+  @include transition(filter, opacity);
+  display: block;
+  width: 85%;
+
+  filter: grayscale(0);
+  opacity: 1;
+
+}
