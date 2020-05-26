@@ -11,10 +11,12 @@
     "date-fns": "2.10.0",
     "gray-matter": "4.0.2",
     "next": "latest",
+    "normalize.css": "^8.0.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "remark": "11.0.2",
-    "remark-html": "10.0.0"
+    "remark-html": "10.0.0",
+    "sass": "^1.26.5"
   },
   "devDependencies": {
     "dotenv": "8.2.0",

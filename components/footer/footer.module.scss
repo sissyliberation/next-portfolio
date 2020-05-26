@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: transparent;
+}
+
+.container {
+  padding: $space;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  padding: $space;
+}
