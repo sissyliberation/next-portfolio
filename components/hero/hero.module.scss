@@ -2,11 +2,15 @@
 @import '../../styles/mixins';
 
 .hero {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 90vh;
+  top: 0;
+  left: 0;
 }
 
 .container {

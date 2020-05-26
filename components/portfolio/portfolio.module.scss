@@ -1,6 +1,10 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
 
+.portfolio {
+  margin-top: 90vh;
+  position: relative;
+}
 
 .container {
   @include container;

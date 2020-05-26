@@ -1,11 +1,6 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
+import Portfolio from '../components/portfolio'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
-import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
 
 import Hero from '../components/hero'
 import PageHead from '../components/pageHead'
@@ -18,7 +13,7 @@ export default function Index({ allPosts }) {
       <Layout>
         <PageHead />
         <Hero />
-        {allPosts.length && <MoreStories posts={allPosts} />}
+        {allPosts.length && <Portfolio posts={allPosts} />}
       </Layout>
     </>
   )
