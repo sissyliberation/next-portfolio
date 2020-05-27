@@ -3,8 +3,7 @@ import DateFormater from '../date-formater'
 import CoverImage from '../cover-image'
 import Link from 'next/link'
 import styles from './portfolioItem.module.scss'
-
-console.log(styles);
+import aosVariables from '../aosVariables';
 
 export default function PortfolioItem({
   title,
@@ -15,7 +14,7 @@ export default function PortfolioItem({
   slug,
 }) {
   return (
-    <div className={styles.item}>
+    <div className={styles.item} data-aos={aosVariables.animation}>
       <Link as={`/posts/${slug}`} href="/posts/[slug]" >
         <a className={styles.link}>
           <div className={styles.imageWrapper}>
@@ -27,10 +26,6 @@ export default function PortfolioItem({
           </div>
 
           <h3 className={styles.title}>{title}</h3>
-          {
-            // <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-            // <Avatar name={author.name} picture={author.picture} />
-          }
         </a>
       </Link>
     </div>

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import styles from './hero.module.scss'
+import aosVariables from '../aosVariables';
 
 export default function Portfolio(props) {
+  let animationIndex = 1;
   const [heroClass, setClass] = useState(styles.hero);
 
   const handleHeroAnimation = () => {
@@ -28,16 +30,26 @@ export default function Portfolio(props) {
   return (
     <section className={heroClass}>
       <div className={styles.container}>
-        <h1 className={styles.title}>{hero.title}</h1>
-        <div className={`${styles.text} ${styles.text1}`} dangerouslySetInnerHTML={{
-          __html: hero.text[0]
-        }}></div>
-        <div className={`${styles.text} ${styles.text2}`} dangerouslySetInnerHTML={{
-          __html: hero.text[1]
-        }}></div>
-        <div className={`${styles.text} ${styles.text3}`} dangerouslySetInnerHTML={{
-          __html: hero.text[2]
-        }}></div>
+        <h1 className={styles.title}>
+          <span data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++}>
+            {hero.title}
+          </span>
+        </h1>
+
+        <div className={`${styles.text} ${styles.text1}`}>
+          <span dangerouslySetInnerHTML={{ __html: hero.text[0] }}
+            data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++}></span>
+        </div>
+
+        <div className={`${styles.text} ${styles.text2}`}>
+          <span dangerouslySetInnerHTML={{ __html: hero.text[1] }}
+            data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++}></span>
+        </div>
+
+        <div className={`${styles.text} ${styles.text3}`}>
+          <span dangerouslySetInnerHTML={{ __html: hero.text[2] }}
+            data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++}></span>
+        </div>
       </div>
     </section>
   )

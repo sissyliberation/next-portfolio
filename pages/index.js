@@ -1,3 +1,6 @@
+import AOS from 'aos';
+import React, { useState, useEffect } from 'react'
+
 import Portfolio from '../components/portfolio'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
@@ -8,6 +11,14 @@ import PageHead from '../components/pageHead'
 export default function Index({ allPosts }) {
   console.log(allPosts);
 
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 600,
+      once: true,
+      anchor: 'center-top',
+    })
+  })
   return (
     <>
       <Layout>
