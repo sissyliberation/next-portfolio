@@ -5,7 +5,7 @@ date: '2020-03-16T05:35:07.322Z'
 ogImage:
   url: '/assets/blog/gaydients/cover.png'
 order: 2
-tags: tag1, tag2, tag3
+tags: React, SCSS
 ---
 
 gaydients is a collection of lgbtqiap+ gradients made with css. they help make the web gay.

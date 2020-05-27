@@ -4,6 +4,7 @@ coverImage: '/assets/blog/queering-the-map/cover.png'
 ogImage:
   url: '/assets/blog/queering-the-map/cover.png'
 order: 1
+tags: Django, SCSS
 ---
 
 Queering the Map is a community-generated mapping project that geo-locates queer moments, memories and histories in relation to physical space. As queer life becomes increasingly less centered around specific neighborhoods and the buildings within them, notions of ‘queer spaces’ become more abstract and less tied to concrete geographical locations. The intent of the Queering the Map project is to collectively document the spaces that hold queer memory, from park benches to parking garages, to mark moments of queerness wherever they occur.
