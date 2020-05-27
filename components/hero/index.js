@@ -4,15 +4,16 @@ import styles from './hero.module.scss'
 export default function Portfolio(props) {
   const [heroClass, setClass] = useState(styles.hero);
 
-  const handleScroll = () => {
+  const handleHeroAnimation = () => {
     let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
     setClass(scrollTop ? `${styles.hero} ${styles.scrolled}` : styles.hero);
   }
-  
+
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    handleHeroAnimation();
+    window.addEventListener('scroll', handleHeroAnimation);
+    return () => window.removeEventListener('scroll', handleHeroAnimation);
   });
 
   const hero = {
