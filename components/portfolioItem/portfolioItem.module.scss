@@ -10,6 +10,7 @@
 
     .title {
       top: 56%;
+      right: 4%;
     }
   }
 
@@ -22,7 +23,7 @@
 
     .title {
       right: auto;
-      left: 4rem;
+      left: -4%;
     }
   }
 
@@ -31,6 +32,13 @@
   &:focus {
     .title {
       opacity: 1;
+      color: $c-dark;
+    }
+
+    .imageWrapper {
+      &:before {
+        opacity: .5;
+      }
     }
 
     .image {
@@ -41,14 +49,14 @@
 }
 
 .title {
-  @include transition(opacity);
+  @include transition(color, opacity);
   position: absolute;
   top: 20%;
   right: $space;
   color: $c-main;
   font-size: 2rem;
   font-weight: bold;
-  width: 40%;
+  max-width: 40%;
   opacity: .3;
 }
 
@@ -56,10 +64,29 @@
   display: block;
 }
 
+.imageWrapper {
+  width: 85%;
+  position: relative;
+
+  &:before {
+    @include transition(opacity);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    background-color: $c-main;
+  }
+}
+
 .image {
   @include transition(filter, opacity);
   display: block;
-  width: 85%;
+
 
   filter: grayscale(0);
   opacity: 1;

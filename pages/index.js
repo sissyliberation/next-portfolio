@@ -6,9 +6,7 @@ import Hero from '../components/hero'
 import PageHead from '../components/pageHead'
 
 export default function Index({ allPosts }) {
-
-
-  const heroPost = allPosts[0]
+  console.log(allPosts);
 
   return (
     <>
@@ -29,7 +27,8 @@ export async function getStaticProps() {
     'author',
     'coverImage',
     'excerpt',
-  ])
+    'order',
+  ]).sort((a, b) => a.order - b.order)
 
   return {
     props: { allPosts },
