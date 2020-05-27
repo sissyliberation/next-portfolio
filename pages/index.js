@@ -9,8 +9,6 @@ import Hero from '../components/hero'
 import PageHead from '../components/pageHead'
 
 export default function Index({ allPosts }) {
-  console.log(allPosts);
-
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -19,6 +17,7 @@ export default function Index({ allPosts }) {
       anchor: 'center-top',
     })
   })
+  
   return (
     <>
       <Layout>
@@ -39,7 +38,8 @@ export async function getStaticProps() {
     'coverImage',
     'excerpt',
     'order',
-  ]).sort((a, b) => a.order - b.order)
+    'tags',
+  ])
 
   return {
     props: { allPosts },
