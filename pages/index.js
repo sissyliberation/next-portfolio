@@ -9,6 +9,8 @@ import Hero from '../components/hero'
 import PageHead from '../components/pageHead'
 
 export default function Index({ allPosts }) {
+  console.log(allPosts);
+  
   useEffect(() => {
     AOS.init({
       offset: 100,
