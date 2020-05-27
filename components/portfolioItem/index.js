@@ -8,9 +8,6 @@ import aosVariables from '../aosVariables';
 export default function PortfolioItem({
   title,
   coverImage,
-  date,
-  excerpt,
-  author,
   slug,
 }) {
   return (

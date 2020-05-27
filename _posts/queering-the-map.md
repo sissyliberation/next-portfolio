@@ -1,20 +1,15 @@
 ---
 title: 'Queering the Map'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.'
 coverImage: '/assets/blog/queering-the-map/cover.png'
-date: '2020-03-16T05:35:07.322Z'
-author:
-  name: JJ Kasper
-  picture: '/assets/blog/authors/jj.jpeg'
 ogImage:
   url: '/assets/blog/queering-the-map/cover.png'
 order: 1
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+Queering the Map is a community-generated mapping project that geo-locates queer moments, memories and histories in relation to physical space. As queer life becomes increasingly less centered around specific neighborhoods and the buildings within them, notions of ‘queer spaces’ become more abstract and less tied to concrete geographical locations. The intent of the Queering the Map project is to collectively document the spaces that hold queer memory, from park benches to parking garages, to mark moments of queerness wherever they occur.
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+QTM has been featured in a bunch of articles, like in [Vice](https://www.vice.com/en_us/article/ne9kjx/queering-the-map-google-maps-lgtbq) and [CityLab](https://www.citylab.com/life/2018/02/how-to-queer-the-mapand-fend-off-an-attack/552824/)
 
-## Lorem Ipsum
+I learned about QTM shortly after it was launched (and hacked). After contacting QTM offering my help, I took over development and completely rewrote the project using Django. I had a bit of help from a few folks along the way.
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+There's a branch to port this to MERN, but that's going slow.
