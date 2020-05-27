@@ -5,25 +5,32 @@
   position: relative;
 
   &:nth-child(even) {
-    margin-top: 3rem;
-    margin-left: -4rem;
 
-    .title {
-      top: 56%;
-      right: 4%;
+    @include screen-md {
+      margin-top: 3rem;
+      margin-left: -4rem;
+
+      .title {
+        top: 56%;
+        right: 4%;
+      }
     }
   }
 
   &:nth-child(odd):not(:first-child) {
-    margin-top: -3rem;
+    @include screen-md {
+      margin-top: -3rem;
+    }
   }
 
   &:nth-child(3n) {
-    margin-left: 3.5rem;
+    @include screen-md {
+      margin-left: 3.5rem;
 
-    .title {
-      right: auto;
-      left: -4%;
+      .title {
+        right: auto;
+        left: -4%;
+      }
     }
   }
 
