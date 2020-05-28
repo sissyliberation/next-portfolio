@@ -40,8 +40,8 @@
 }
 
 .text {
-  margin-top: 2rem;
   @include generalText;
+  margin-top: 2rem;
 
   @include screen-md {
     margin-top: 4rem;

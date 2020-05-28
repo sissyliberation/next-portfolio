@@ -5,6 +5,8 @@ import markdownStyles from '../../components/markdown-styles.module.css'
 import styles from './postPage.module.scss'
 import aosVariables from '../aosVariables';
 
+import Tags from '../../components/tags'
+
 export default function PostPage({post}) {
   let animationIndex = 1;
 
@@ -37,6 +39,10 @@ export default function PostPage({post}) {
         <img className={styles.coverImage}
           src={post.coverImage}
           alt={`Cover Image for ${post.title}`} />
+
+        {post.tags && (
+          <Tags tags={post.tags} />
+        )}
       </div>
 
       <div className={`${markdownStyles['markdown']} ${styles.text}`}

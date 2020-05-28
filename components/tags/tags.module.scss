@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.container {
+  // @include generalText;
+  margin-top: 2rem;
+
+  @include screen-md {
+    margin-top: 0rem;
+    position: absolute;
+    top: 60%;
+    left: -1rem;
+  }
+
+  @include screen-lg {
+    left: -2rem;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: $c-main;
+  color: $c-dark;
+  font-size: .8rem;
+  font-weight: 900;
+  padding: .5rem 1rem;
+  letter-spacing: .2rem;
+  font-weight: 900;
+  margin-top: 1rem;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
