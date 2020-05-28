@@ -11,12 +11,7 @@ export default function PostPage({post}) {
   let animationIndex = 1;
 
   useEffect(() => {
-    AOS.init({
-      offset: 100,
-      duration: 600,
-      once: true,
-      anchor: 'center-top',
-    })
+    AOS.init(aosVariables.init)
   })
 
   return (

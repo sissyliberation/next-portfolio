@@ -1,21 +1,16 @@
 import AOS from 'aos';
 import React, { useState, useEffect } from 'react'
+import { getAllPosts } from '../lib/api'
 
 import Portfolio from '../components/portfolio'
 import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
-
 import Hero from '../components/hero'
 import PageHead from '../components/pageHead'
+import aosVariables from '../components/aosVariables';
 
 export default function Index({ allPosts }) {
   useEffect(() => {
-    AOS.init({
-      offset: 100,
-      duration: 600,
-      once: true,
-      anchor: 'center-top',
-    })
+    AOS.init(aosVariables.init)
   })
 
   return (
