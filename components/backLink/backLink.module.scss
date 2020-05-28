@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.backLink {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.arrow {
+  padding: 2rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+
+  &:before {
+    @include transition(background-color);
+    content: '';
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: bottom;
+    width: 2rem;
+    background-color: $c-main;
+  }
+
+
+  &:after {
+    @include transition(border-color);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-color: $c-main;
+    content: '';
+    display: block;
+    height: 1rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -50%) rotate(135deg);
+    width: 1rem;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &:before {
+      background-color: $c-dark;
+    }
+
+    &:after {
+      border-color: $c-dark;
+    }
+  }
+}

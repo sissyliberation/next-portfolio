@@ -9,6 +9,7 @@ import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 
 import PostPage from '../../components/postPage'
+import BackLink from '../../components/backLink'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -17,7 +18,7 @@ export default function Post({ post, morePosts, preview }) {
   }
   return (
     <Layout preview={preview}>
-      <Header />
+      <BackLink />
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (
