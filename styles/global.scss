@@ -24,3 +24,19 @@ h1, h2, h3, h4, h5, h6 {
 a[href] {
   color: $c-main;
 }
+
+body::-webkit-scrollbar {
+  width: .5rem;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: $c-main transparent;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $c-main ;
+  border-radius: 6px;
+  border: 2px solid transparent;
+}
