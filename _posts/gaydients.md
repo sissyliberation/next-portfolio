@@ -13,3 +13,5 @@ gaydients is a collection of lgbtqiap+ gradients made with css. they help make t
 I made this because I tend to use rainbow / trans flag gradients a lot when prototyping, particularly in hackathons.
 
 The sass that generates the flags is super neat and extensible. I geek out about things like that.
+
+Check it out <a href="https://gaydients.herokuapp.com/" target="_blank">here</a>.

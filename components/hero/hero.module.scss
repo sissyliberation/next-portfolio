@@ -23,33 +23,11 @@
 }
 
 .title {
-  @include transition(color, opacity);
-  font-size: 4rem;
-  opacity: 1;
-
-  @include screen-md {
-    font-size: 6rem;
-  }
-
-  @include screen-lg {
-    font-size: 10rem;
-  }
+  @include bigHeading;
 }
 
 .text {
-  @include transition(color, opacity);
-  font-size: 1.75rem;
-  margin-top: $space-md;
-  opacity: 1;
-
-  @include screen-md {
-    margin-top: 0;
-    font-size: 2.3rem;
-  }
-
-  @include screen-lg {
-    font-size: 2.6rem;
-  }
+  @include smallHeading;
 }
 
 .text1 {

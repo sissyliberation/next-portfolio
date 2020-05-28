@@ -39,3 +39,39 @@
     transition-duration: $global-transition-duration;
     transition-property: $transition-property;
 }
+
+@mixin bigHeading {
+  @include transition(color, opacity);
+  font-size: 4rem;
+  opacity: 1;
+
+  @include screen-md {
+    font-size: 6rem;
+  }
+
+  @include screen-lg {
+    font-size: 10rem;
+  }
+}
+
+@mixin smallHeading {
+  @include transition(color, opacity);
+  font-size: 1.75rem;
+  margin-top: $space-md;
+  opacity: 1;
+
+  @include screen-md {
+    margin-top: 0;
+    font-size: 2.3rem;
+  }
+
+  @include screen-lg {
+    font-size: 2.6rem;
+  }
+}
+
+@mixin generalText {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}

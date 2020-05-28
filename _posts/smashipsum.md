@@ -10,3 +10,5 @@ tags: React, Node, SCSS
 SmashIpsum is a a Lorem Ipsum generator for the Super Smash Bros series. I made this because I play Smash completely and also need filler text.
 
 This was the first React project I launched, so go easy on me.
+
+Check it out <a href="https://smashipsum.herokuapp.com/" target="_blank">here</a>.

@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import Container from '../../components/container'
 import Header from '../../components/header'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
@@ -12,22 +11,18 @@ import markdownToHtml from '../../lib/markdownToHtml'
 import PostPage from '../../components/postPage'
 
 export default function Post({ post, morePosts, preview }) {
-  console.log(post);
-
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
   return (
     <Layout preview={preview}>
-      <Container>
-        <Header />
-        {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
-        ) : (
-          <PostPage post={post} />
-        )}
-      </Container>
+      <Header />
+      {router.isFallback ? (
+        <PostTitle>Loading…</PostTitle>
+      ) : (
+        <PostPage post={post} />
+      )}
     </Layout>
   )
 }
