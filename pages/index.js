@@ -6,7 +6,7 @@ import Portfolio from '../components/portfolio'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import PageHead from '../components/pageHead'
-import aosVariables from '../components/aosVariables';
+import {aosVariables} from '../lib/constants';
 
 export default function Index({ allPosts }) {
   useEffect(() => {

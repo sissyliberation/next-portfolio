@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styles from './portfolioItem.module.scss'
-import aosVariables from '../aosVariables';
+import {aosVariables} from '../../lib/constants';
 
 export default function PortfolioItem({
   title,

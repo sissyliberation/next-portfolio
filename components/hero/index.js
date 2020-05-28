@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styles from './hero.module.scss'
-import aosVariables from '../aosVariables';
+import {aosVariables} from '../../lib/constants';
 
 export default function Portfolio(props) {
   let animationIndex = 1;

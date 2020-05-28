@@ -1,10 +1,9 @@
 import AOS from 'aos';
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
-import markdownStyles from '../../components/markdown-styles.module.css'
+import markdownStyles from '../markdown-styles.module.css'
 import styles from './postPage.module.scss'
-import aosVariables from '../aosVariables';
-
+import {aosVariables} from '../../lib/constants';
 import Tags from '../../components/tags'
 
 export default function PostPage({post}) {
