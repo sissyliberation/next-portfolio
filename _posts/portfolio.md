@@ -3,7 +3,7 @@ title: 'portfolio'
 coverImage: '/assets/blog/portfolio/cover.png'
 ogImage:
   url: '/assets/blog/portfolio/cover.png'
-order: 5
+order: 6
 tags: React, Next.js, (S)CSS modules
 ---
 
