@@ -21,17 +21,15 @@
     max-width: 40%;
     position: absolute;
     top: 12%;
-    right: 0;
+    right: 12%;
   }
 
   @include screen-lg {
-    right: 8%;
+    right: 18%;
   }
 }
 
 .coverImage {
-  // width: 85%;
-
   @include screen-md {
     width: 85%;
   }
