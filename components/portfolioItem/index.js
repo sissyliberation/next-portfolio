@@ -1,6 +1,3 @@
-import Avatar from '../avatar'
-import DateFormater from '../date-formater'
-import CoverImage from '../cover-image'
 import Link from 'next/link'
 import styles from './portfolioItem.module.scss'
 import aosVariables from '../aosVariables';

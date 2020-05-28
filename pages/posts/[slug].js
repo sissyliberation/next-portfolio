@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../../components/container'
-import PostBody from '../../components/post-body'
 import Header from '../../components/header'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
@@ -9,7 +8,8 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
-import markdownStyles from '../../components/markdown-styles.module.css'
+
+import PostPage from '../../components/postPage'
 
 export default function Post({ post, morePosts, preview }) {
   console.log(post);
@@ -25,24 +25,7 @@ export default function Post({ post, morePosts, preview }) {
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
-                </title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-
-              <h1>{post.title}</h1>
-
-              <img src={post.coverImage} alt={`Cover Image for ${post.title}`} />
-
-              <div className={markdownStyles['markdown']}
-                dangerouslySetInnerHTML={{ __html: post.content }} />
-
-            </article>
-          </>
+          <PostPage post={post} />
         )}
       </Container>
     </Layout>
@@ -58,7 +41,6 @@ export async function getStaticProps({ params }) {
     'content',
     'ogImage',
     'coverImage',
-    'tags',
   ])
   const content = await markdownToHtml(post.content || '')
 
@@ -74,8 +56,6 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const posts = getAllPosts(['slug'])
-  console.log('--');
-  console.log(posts);
 
   return {
     paths: posts.map((posts) => {
