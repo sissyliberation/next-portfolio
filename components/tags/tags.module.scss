@@ -2,9 +2,6 @@
 @import '../../styles/mixins';
 
 .container {
-  // @include generalText;
-  margin-top: 2rem;
-
   @include screen-md {
     margin-top: 0rem;
     position: absolute;
