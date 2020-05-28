@@ -1,6 +1,6 @@
 const aosVariables = {
   'animation': 'fade',
-  'delay': '275',
+  'delay': '250',
 };
 
 export default aosVariables;
