@@ -55,7 +55,7 @@
 }
 
 .title {
-  @include transition(color, opacity);
+  @include transition(color);
   position: absolute;
   top: 20%;
   right: $space;
@@ -63,7 +63,6 @@
   font-size: 2rem;
   font-weight: bold;
   max-width: 40%;
-  opacity: .3;
 }
 
 .link {
