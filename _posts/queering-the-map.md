@@ -5,6 +5,9 @@ ogImage:
   url: '/assets/blog/queering-the-map/cover.png'
 order: 1
 tags: Django, SCSS
+links:
+  1: https://queeringthemap.com
+
 ---
 
 Queering the Map is a community-generated mapping project that geo-locates queer moments, memories and histories in relation to physical space. As queer life becomes increasingly less centered around specific neighborhoods and the buildings within them, notions of ‘queer spaces’ become more abstract and less tied to concrete geographical locations. The intent of the Queering the Map project is to collectively document the spaces that hold queer memory, from park benches to parking garages, to mark moments of queerness wherever they occur.
@@ -14,5 +17,3 @@ QTM has been featured in a bunch of articles, like in <a href="https://www.vice.
 I learned about QTM shortly after it was launched (and hacked). After contacting QTM offering my help, I took over development and completely rewrote the project using Django. I had a bit of help from a few folks along the way.
 
 There's a branch to port this to MERN, but that's going slow.
-
-Check it out <a href="https://queeringthemap.com/" target="_blank">here</a>.
