@@ -6,8 +6,7 @@ ogImage:
 order: 1
 tags: Django, SCSS
 links:
-  1: https://queeringthemap.com/
-  2: http://google.com/
+  1: https://queeringthemap.com
 
 ---
 
