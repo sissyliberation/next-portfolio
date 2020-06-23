@@ -10,6 +10,6 @@ links:
   2: https://github.com/novacourtois/smashipsum
 ---
 
-SmashIpsum is a a Lorem Ipsum generator for the Super Smash Bros series. I made this because I play Smash completely and also need filler text.
+SmashIpsum is a Lorem Ipsum generator for the Super Smash Bros series. I made this because I play Smash completely and also need filler text.
 
 This was the first React project I launched, so go easy on me.
