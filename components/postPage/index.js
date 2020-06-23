@@ -50,15 +50,9 @@ export default function PostPage({post}) {
             Check it out
             {
               linkKeys.map((link, linkIndex) => {
-                if (linkIndex < linkKeys.length - 1) {
-                  return (
-                    <>&nbsp;<a href={post.links[link]} target='_blank'>here</a> and</>
-                  )
-                }
-
-                return (
-                  <>&nbsp;<a href={post.links[link]} target='_blank'>here</a>.</>
-                )
+                return linkIndex < linkKeys.length - 1 ?
+                  <>&nbsp;<a href={post.links[link]} target='_blank'>here</a> and</>
+                  : <>&nbsp;<a href={post.links[link]} target='_blank'>here</a>.</>
               })
             }
           </div>
