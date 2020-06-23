@@ -8,7 +8,7 @@ import Tags from '../../components/tags'
 
 export default function PostPage({post}) {
   console.log(post);
-  const linkKeys = post.links ? Object.keys(post.links) : [];
+  const linkKeys = post.links ? Object.keys(post.links) : null;
   let animationIndex = 1;
 
   useEffect(() => {
@@ -48,7 +48,6 @@ export default function PostPage({post}) {
         { linkKeys && (
           <div className={`${markdownStyles['markdown']} ${styles.text}`}
           data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++}>
-            <p>
             Check it out
             {
               linkKeys.map((link, linkIndex) => {
@@ -63,7 +62,6 @@ export default function PostPage({post}) {
                 )
               })
             }
-            </p>
           </div>
         )}
     </article>
