@@ -42,12 +42,11 @@ export default function PostPage({post}) {
       </div>
 
       <div className={`${markdownStyles['markdown']} ${styles.text}`}
-        dangerouslySetInnerHTML={{ __html: post.content }}
-        data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++} />
+        data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++}>
+        <div dangerouslySetInnerHTML={{ __html: post.content }} />
 
         { linkKeys && (
-          <div className={`${markdownStyles['markdown']} ${styles.text}`}
-          data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++}>
+          <div>
             Check it out
             {
               linkKeys.map((link, linkIndex) => {
@@ -64,6 +63,7 @@ export default function PostPage({post}) {
             }
           </div>
         )}
+      </div>
     </article>
     </>
   )
