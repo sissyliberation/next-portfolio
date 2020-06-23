@@ -7,6 +7,8 @@ import {aosVariables} from '../../lib/constants';
 import Tags from '../../components/tags'
 
 export default function PostPage({post}) {
+  console.log(post);
+  const linkKeys = post.links ? Object.keys(post.links) : [];
   let animationIndex = 1;
 
   useEffect(() => {
@@ -42,6 +44,28 @@ export default function PostPage({post}) {
       <div className={`${markdownStyles['markdown']} ${styles.text}`}
         dangerouslySetInnerHTML={{ __html: post.content }}
         data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++} />
+
+        { linkKeys && (
+          <div className={`${markdownStyles['markdown']} ${styles.text}`}
+          data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++}>
+            <p>
+            Check it out
+            {
+              linkKeys.map((link, linkIndex) => {
+                if (linkIndex < linkKeys.length - 1) {
+                  return (
+                    <>&nbsp;<a href={post.links[link]} target='_blank'>here</a> and</>
+                  )
+                }
+
+                return (
+                  <>&nbsp;<a href={post.links[link]} target='_blank'>here</a>.</>
+                )
+              })
+            }
+            </p>
+          </div>
+        )}
     </article>
     </>
   )
