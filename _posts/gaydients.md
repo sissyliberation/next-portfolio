@@ -4,7 +4,7 @@ coverImage: '/assets/blog/gaydients/cover.png'
 date: '2020-03-16T05:35:07.322Z'
 ogImage:
   url: '/assets/blog/gaydients/cover.png'
-order: 2
+order: 3
 tags: React, SCSS
 links:
   1: https://gaydients.herokuapp.com

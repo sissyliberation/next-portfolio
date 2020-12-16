@@ -3,7 +3,7 @@ title: 'SmashIpsum'
 coverImage: '/assets/blog/smashipsum/cover.png'
 ogImage:
   url: '/assets/blog/smashipsum/cover.png'
-order: 3
+order: 4
 tags: React, Node, Mongo, SCSS
 links:
   1: https://smashipsum.herokuapp.com
