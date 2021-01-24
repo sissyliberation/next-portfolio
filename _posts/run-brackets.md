@@ -3,7 +3,7 @@ title: 'Run Brackets'
 coverImage: '/assets/blog/run-brackets/cover.png'
 ogImage:
   url: '/assets/blog/run-brackets/cover.png'
-order: 6
+order: 7
 tags: Angular, Node, Mongo, Challonge API, SCSS
 ---
 
