@@ -34,7 +34,7 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`my pronouns are they or she. i make things. i try not to make things worse.`}
+        content={`my pronouns are they / she. i make things. i try not to make things worse.`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
