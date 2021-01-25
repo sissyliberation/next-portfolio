@@ -40,10 +40,19 @@
     transition-property: $transition-property;
 }
 
+@mixin outline-text($color: $c-dark, $strokeColor: $c-main) {
+  color: $strokeColor;
+  -webkit-text-fill-color: $color; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $strokeColor;
+}
+
 @mixin bigHeading {
+  @include outline-text;
   @include transition(color, opacity);
   font-size: 4rem;
   opacity: 1;
+  font-weight: 500;
 
   @include screen-md {
     font-size: 6rem;
@@ -55,10 +64,13 @@
 }
 
 @mixin smallHeading {
+  @include outline-text;
   @include transition(color, opacity);
   font-size: 1.75rem;
   margin-top: $space-md;
   opacity: 1;
+  font-weight: 800;
+  letter-spacing: .1rem;
 
   @include screen-md {
     margin-top: 0;

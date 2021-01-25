@@ -2,7 +2,7 @@
 @import 'variables';
 @import 'mixins';
 
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;500;800;900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -14,7 +14,8 @@
 
 html, body {
   line-height: 1;
-  color: $c-dark;
+  background-color: $c-dark;
+  color: $c-main;
 }
 
 h1, h2, h3, h4, h5, h6 {
