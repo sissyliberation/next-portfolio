@@ -21,8 +21,9 @@
 }
 
 .tag {
-  background-color: $c-main;
-  color: $c-dark;
+  border: 1px solid $c-main;
+  color: $c-main;
+  background-color: $c-dark;
   font-size: .8rem;
   font-weight: 900;
   padding: .5rem 1rem;

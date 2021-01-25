@@ -55,7 +55,8 @@
 }
 
 .pronouns {
-  color: $c-main;
+  // color: $c-main;
+  @include outline-text($color: $c-dark, $strokeColor: #fff)
 }
 
 .scrolled {
