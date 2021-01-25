@@ -7,7 +7,6 @@ import {aosVariables} from '../../lib/constants';
 import Tags from '../../components/tags'
 
 export default function PostPage({post}) {
-  console.log(post);
   const linkKeys = post.links ? Object.keys(post.links) : null;
   let animationIndex = 1;
 

@@ -13,9 +13,9 @@
   display: inline-block;
   width: 2rem;
   height: 2rem;
+  @include transition(transform);
 
   &:before {
-    @include transition(background-color);
     content: '';
     height: 2px;
     position: absolute;
@@ -29,7 +29,7 @@
 
 
   &:after {
-    @include transition(border-color);
+    @include transition(width);
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-right-style: solid;
@@ -48,12 +48,15 @@
   &:hover,
   &:focus,
   &:active {
-    &:before {
-      background-color: $c-dark;
-    }
-
-    &:after {
-      border-color: $c-dark;
-    }
+    transform: translateX(-.5rem);
+    // &:before {
+    //   width: 4px;
+    //   // background-color: $c-dark;
+    // }
+    //
+    // &:after {
+    //   width: 4px;
+    //   // border-color: $c-dark;
+    // }
   }
 }

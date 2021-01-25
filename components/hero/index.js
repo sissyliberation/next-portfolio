@@ -21,7 +21,7 @@ export default function Portfolio(props) {
   const hero = {
     title: 'im nova skye',
     text: [
-      `my pronouns are <span class=${styles.pronouns}>they</span> or <span class=${styles.pronouns}>she</span>`,
+      `my pronouns are <span class=${styles.pronouns}>they</span> / <span class=${styles.pronouns}>she</span>`,
       'i make things',
       'i try not to make things worse'
     ],
