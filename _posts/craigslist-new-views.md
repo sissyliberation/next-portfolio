@@ -8,7 +8,7 @@ order: 7
 tags: Chrome Extension, React
 links:
   1: https://craigslist-new-views.vercel.app/
-  2: https://github.com/anarchotechslut/craigslist-new-view
+  2: https://github.com/anarchotechqueer/craigslist-new-view
 ---
 
 CraigsList is both good and bad and I needed a way to quickly see what was new and what wasn't. So I built this.

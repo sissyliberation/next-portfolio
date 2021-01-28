@@ -18,8 +18,4 @@
     grid-column-gap: $space-xxl;
     grid-row-gap: $space-xxl;
   }
-
-  // @include screen-lg {
-  //   grid-template-columns: repeat(3, minmax(0, 1fr));
-  // }
 }

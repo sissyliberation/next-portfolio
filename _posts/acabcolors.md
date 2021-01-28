@@ -3,7 +3,7 @@ title: 'ACAB colors'
 coverImage: '/assets/blog/acabcolors/cover.png'
 ogImage:
   url: '/assets/blog/acabcolors/cover.png'
-order: 2
+order: 3
 tags: React, (S)CSS modules
 links:
   1: https://acabcolors.com/

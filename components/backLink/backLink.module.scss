@@ -49,14 +49,5 @@
   &:focus,
   &:active {
     transform: translateX(-.5rem);
-    // &:before {
-    //   width: 4px;
-    //   // background-color: $c-dark;
-    // }
-    //
-    // &:after {
-    //   width: 4px;
-    //   // border-color: $c-dark;
-    // }
   }
 }

@@ -3,11 +3,11 @@ title: 'asdf to aoeu'
 coverImage: '/assets/blog/asdf-to-aoeu/cover.gif'
 ogImage:
   url: '/assets/blog/asdf-to-aoeu/cover.png'
-order: 3
+order: 4
 tags: Svelte, Anime.js
 links:
   1: https://asdf-to-aoeu.vercel.app/
-  2: https://github.com/anarchotechslut/asdf-to-aoeu
+  2: https://github.com/anarchotechqueer/asdf-to-aoeu
 ---
 
 I don't use qwerty. I use dvorak.

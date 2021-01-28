@@ -8,7 +8,7 @@ order: 6
 tags: React, Node, SCSS
 links:
   1: https://sunday-april-19th.herokuapp.com
-  2: https://github.com/anarchotechslut/sunday-april-19th
+  2: https://github.com/anarchotechqueer/sunday-april-19th
 ---
 
 One of my favorite artists, <a href="https://www.flatsound.org" target="_blank">flatsound</a>, has a song called "it's sunday, april 19th and i miss you".

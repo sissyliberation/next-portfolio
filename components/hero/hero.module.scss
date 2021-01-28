@@ -55,7 +55,6 @@
 }
 
 .pronouns {
-  // color: $c-main;
   @include outline-text($color: $c-dark, $strokeColor: #fff)
 }
 
