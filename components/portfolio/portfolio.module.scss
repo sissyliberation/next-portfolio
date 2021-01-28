@@ -18,4 +18,12 @@
     grid-column-gap: $space-xxl;
     grid-row-gap: $space-xxl;
   }
+
+  @include screen-lg {
+    padding-left: $space-xl;
+    padding-right: $space-xl;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: $space-xl;
+    grid-row-gap: $space-xl;
+  }
 }
