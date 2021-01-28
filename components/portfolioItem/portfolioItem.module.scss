@@ -6,36 +6,150 @@
 
   @include screen-md(true) {
     &:nth-child(even) {
-        margin-top: 3rem;
-        margin-left: -4rem;
+      margin-top: 3rem;
+      margin-left: -4rem;
 
-        .title {
-          top: 56%;
-          right: 4%;
-        }
-
+      .title {
+        top: 56%;
+        right: 4%;
+      }
     }
 
     &:nth-child(odd):not(:first-child) {
-
-        margin-top: -3rem;
-
+      margin-top: -3rem;
     }
 
     &:nth-child(3n) {
-        margin-left: 3.5rem;
+      margin-left: 3.5rem;
 
-        .title {
-          right: auto;
-          left: -4%;
-        }
-
+      .title {
+        right: auto;
+        left: -4%;
+      }
     }
   }
+
+  @include screen-lg {
+    .title {
+      top: auto;
+      right: auto;
+    }
+
+    &:nth-child(1) {
+      .title {
+        right: 36%;
+        top: 16%;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-right: -$space-xxl;
+      margin-top: $space-xxl;
+
+      .title {
+        bottom: 13%;
+        right: -9%;
+
+      }
+    }
+
+    &:nth-child(3) {
+      margin-left: $space-xxl;
+      margin-right: -$space-xxl;
+      margin-top: $space-lg;
+
+      .imageWrapper {
+        margin-left: auto;
+      }
+
+      .title {
+        top: 31%;
+        left: 0;
+      }
+    }
+
+    &:nth-child(4) {
+      margin-left: -$space-xxl;
+      margin-right: $space-xxl;
+      margin-top: -$space-lg;
+
+      .title {
+        top: -9%;
+        left: 6%;
+      }
+    }
+
+    &:nth-child(5) {
+      margin-left: -$space-xxl;
+
+      .title {
+        top: 18%;
+        left: -12%;
+      }
+    }
+
+    &:nth-child(6) {
+      margin-top: -$space-lg;
+
+      .title {
+        right: 32%;
+        top: 50%;
+      }
+    }
+
+    &:nth-child(7) {
+      margin-left: -$space-lg;
+      margin-right: $space-lg;
+
+      .title {
+        right: 50%;
+        bottom: 20%;
+      }
+    }
+
+    &:nth-child(8) {
+      margin-left: $space-xxl;
+      margin-right: $space-xxl;
+      margin-top: $space-xxl;
+
+      .title {
+        left: -30%;
+        top: 5%;
+      }
+    }
+
+    &:nth-child(9) {
+      margin-left: -$space-xxl;
+
+      .title {
+        top: 21%;
+        right: 0;
+
+      }
+    }
+  }
+}
+
+.title {
+  @include smallHeading;
+  position: absolute;
+  top: 20%;
+  right: $space;
+  max-width: 40%;
+
+  @include screen-lg {
+    white-space: nowrap;
+  }
+}
+
+.link {
+  display: block;
+  outline: none;
 
   &:hover,
   &:active,
   &:focus {
+
     .title {
       opacity: 1;
       color: $c-dark;
@@ -52,18 +166,6 @@
       opacity: .25;
     }
   }
-}
-
-.title {
-  @include smallHeading;
-  position: absolute;
-  top: 20%;
-  right: $space;
-  max-width: 40%;
-}
-
-.link {
-  display: block;
 }
 
 .imageWrapper {
