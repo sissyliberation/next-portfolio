@@ -4,32 +4,32 @@
 .item {
   position: relative;
 
-  &:nth-child(even) {
-    @include screen-md {
-      margin-top: 3rem;
-      margin-left: -4rem;
+  @include screen-md(true) {
+    &:nth-child(even) {
+        margin-top: 3rem;
+        margin-left: -4rem;
 
-      .title {
-        top: 56%;
-        right: 4%;
-      }
+        .title {
+          top: 56%;
+          right: 4%;
+        }
+
     }
-  }
 
-  &:nth-child(odd):not(:first-child) {
-    @include screen-md {
-      margin-top: -3rem;
+    &:nth-child(odd):not(:first-child) {
+
+        margin-top: -3rem;
+
     }
-  }
 
-  &:nth-child(3n) {
-    @include screen-md {
-      margin-left: 3.5rem;
+    &:nth-child(3n) {
+        margin-left: 3.5rem;
 
-      .title {
-        right: auto;
-        left: -4%;
-      }
+        .title {
+          right: auto;
+          left: -4%;
+        }
+
     }
   }
 

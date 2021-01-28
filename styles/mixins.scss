@@ -22,10 +22,19 @@
   }
 }
 
-@mixin screen-md {
-  @media (min-width: $screen-md) {
-    @content;
+@mixin screen-md($only: false) {
+
+  @if $only {
+    @media (min-width: $screen-md) and (max-width: $screen-md-end) {
+      @content;
+    }
   }
+  @else {
+    @media (min-width: $screen-md) {
+      @content;
+    }
+  }
+
 }
 
 @mixin screen-lg {
