@@ -51,6 +51,9 @@ export default function Portfolio(props) {
             data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++}></span>
         </div>
       </div>
+      <div className={styles.portraitWrapper}>
+        <img src={"/assets/hero/portrait.jpg"} className={styles.portrait} data-aos={aosVariables.animation} data-aos-delay={aosVariables.delay * animationIndex++}/>
+      </div>
     </section>
   )
 }

@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
 }
 
 .title {
@@ -58,10 +59,30 @@
   @include outline-text($color: $c-dark, $strokeColor: #fff)
 }
 
+.portraitWrapper {
+  position: absolute;
+  right: 13%;
+  top: 7%;
+  width: 40vw;
+
+  @include screen-md {
+    width: 22vw;
+  }
+}
+
+.portrait {
+  display: block;
+  width: 100%;
+}
+
 .scrolled {
   .title,
   .text {
     opacity: .25;
     color: $c-main;
+  }
+
+  .portraitWrapper {
+    opacity: .25;
   }
 }
