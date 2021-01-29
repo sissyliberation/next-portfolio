@@ -6,14 +6,15 @@
   width: 100%;
   bottom: 0;
   background-color: transparent;
+
+  .link {
+    padding: $space;
+    text-decoration: none;
+  }
 }
 
 .container {
   padding: $space;
   display: flex;
   justify-content: flex-end;
-}
-
-.link {
-  padding: $space;
 }
