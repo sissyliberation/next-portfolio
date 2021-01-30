@@ -14,6 +14,7 @@ export default function Portfolio({ posts }) {
             author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
+            type={post.type}
           />
         ))}
       </div>

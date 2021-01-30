@@ -6,6 +6,7 @@ export default function PortfolioItem({
   title,
   coverImage,
   slug,
+  type,
 }) {
   return (
     <div className={styles.item} data-aos={aosVariables.animation}>
