@@ -128,6 +128,14 @@
       }
     }
   }
+
+  &.gif {
+    .image {
+      max-height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 .title {

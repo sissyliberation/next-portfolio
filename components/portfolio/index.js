@@ -2,10 +2,12 @@ import PortfolioItem from '../portfolioItem'
 import styles from './portfolio.module.scss'
 
 export default function Portfolio({ posts }) {
+  let allPosts = posts;
+  
   return (
     <section className={styles.portfolio}>
       <div className={styles.grid}>
-        {posts.map((post) => (
+        {allPosts.map((post) => (
           <PortfolioItem
             key={post.slug}
             title={post.title}

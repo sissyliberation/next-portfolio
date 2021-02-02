@@ -3,7 +3,7 @@ title: 'asdf to aoeu'
 coverImage: '/assets/blog/asdf-to-aoeu/cover.gif'
 ogImage:
   url: '/assets/blog/asdf-to-aoeu/cover.png'
-order: 4
+order: 3
 tags: Svelte, Anime.js
 links:
   1: https://asdf-to-aoeu.vercel.app/
