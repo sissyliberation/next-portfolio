@@ -7,7 +7,7 @@ ogImage:
 order: 2
 tags: React, SCSS, npm package
 links:
-  1: https://gaydients.herokuapp.com
+  1: https://gaydients.lgbt
   2: https://github.com/anarchotechqueer/gaydients
 ---
 
