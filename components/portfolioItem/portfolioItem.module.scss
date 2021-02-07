@@ -191,8 +191,6 @@
   @include transition(filter, opacity);
   display: block;
 
-
   filter: grayscale(0);
   opacity: 1;
-
 }

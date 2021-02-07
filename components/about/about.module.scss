@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+
+.about {
+  margin-top: 100vh;
+  position: relative;
+  padding: $space-xxl 0;
+  
+  @include screen-md {
+    height: 100vh;
+  }
+}
+
+.container {
+  @include container;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+}
+
+.title {
+  @include smallHeading;
+  margin-bottom: $space-xl;
+
+  @include screen-md {
+    margin-bottom: $space-xxl;
+  }
+}
+
+.textContainer {
+  @include screen-md {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.text {
+  font-size: 1.6rem;
+  line-height: 1.4;
+
+  @include screen-md {
+    width: calc((100% - #{$space-xl}) / 2);
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  @include screen-lg {
+    width: calc((100% - #{$space-xxl}) / 2);
+  }
+
+  &:not(:first-of-type) {
+    margin-top: $space-xl;
+
+    @include screen-md {
+      margin-top: 0;
+      margin-left: $space-xl;
+    }
+
+    @include screen-lg {
+      margin-left: $space-xxl;
+    }
+  }
+}

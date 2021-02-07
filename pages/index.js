@@ -2,10 +2,11 @@ import AOS from 'aos';
 import React, { useState, useEffect } from 'react'
 import { getAllPosts } from '../lib/api'
 
-import Portfolio from '../components/portfolio'
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import PageHead from '../components/pageHead'
+import Portfolio from '../components/portfolio';
+import Layout from '../components/layout';
+import Hero from '../components/hero';
+import About from '../components/about';
+import PageHead from '../components/pageHead';
 import {aosVariables} from '../lib/constants';
 
 export default function Index({ allPosts }) {
@@ -18,6 +19,7 @@ export default function Index({ allPosts }) {
       <Layout>
         <PageHead />
         <Hero />
+        <About />
         {allPosts.length && <Portfolio posts={allPosts} />}
       </Layout>
     </>
