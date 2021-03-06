@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styles from './hero.module.scss'
 import {aosVariables} from '../../lib/constants';
 
-export default function Portfolio(props) {
+export default function Hero(props) {
   let animationIndex = 1;
   const [heroClass, setClass] = useState(styles.hero);
 

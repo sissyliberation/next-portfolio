@@ -2,9 +2,8 @@
 @import '../../styles/mixins';
 
 .portfolio {
-  margin-top: 90vh;
   position: relative;
-  padding-bottom: 5rem;
+  padding: $space-xxl 0;
   overflow: hidden;
 }
 
